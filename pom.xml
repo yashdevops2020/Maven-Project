@@ -18,7 +18,7 @@
        <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url>https://github.com/yashdevops2020/DeployProject/</url>
+         <url></url>
        </repository>
    </distributionManagement>
   
