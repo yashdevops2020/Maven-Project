@@ -18,7 +18,7 @@
        <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url></url>
+         <url>file:deploy</url>
        </repository>
    </distributionManagement>
   
