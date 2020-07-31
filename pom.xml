@@ -18,7 +18,7 @@
        <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url>http://localhost:8081/</url>
+         <url>http://192.168.43.151:8081/</url>
        </repository>
    </distributionManagement>
   
