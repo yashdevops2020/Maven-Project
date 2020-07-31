@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <failOnMissingWebXml>false</failOnMissingWebXml>   
 </properties>
+  
 <distributionManagement>
        <repository>
          <id>internal.repo</id>
@@ -21,6 +21,11 @@
          <url>http://localhost:8081/</url>
        </repository>
    </distributionManagement>
+  
+  <plugin>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.0.0</version>
+</plugin>
   
   <dependencies>
     <dependency>
