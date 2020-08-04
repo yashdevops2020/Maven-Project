@@ -15,29 +15,21 @@
 </properties>
   
 <distributionManagement>
-       <repository>
-         <id>tomcat.server</id>
-         <name>TomcatServer</name>
-         <url>http://localhost:8081/manager/</url>
-       </repository>
-   </distributionManagement>
+
+ 
+<repository>
+<id>internal.repo</id>
+<name>Internal repo</name>
+<url>file:deploy</url>
+</repository>
+</distributionManagement>
   
   <build>
     <plugins>
      <plugin>
-  <artifactId>maven-war-plugin</artifactId>
-  <version>3.0.0</version>
-</plugin>
-      <plugin>
-    <groupId>org.apache.tomcat.maven</groupId>
-    <artifactId>tomcat7-maven-plugin</artifactId>
-    <version>2.2</version>
-    <configuration>
-        <url>http://localhost:8081/manager/</url>
-        <server>TomcatServer</server>
-        <path>/myapp</path>
-    </configuration>
-</plugin>
+       <artifactId>maven-war-plugin</artifactId>
+      <version>3.0.0</version>
+      </plugin>   
     </plugins>
   </build>
   
