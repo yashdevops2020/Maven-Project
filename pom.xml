@@ -16,9 +16,9 @@
   
 <distributionManagement>
        <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url>http://192.168.43.151:8081/</url>
+         <id>tomcat.server</id>
+         <name>TomcatServer</name>
+         <url>http://localhost:8081/manager/</url>
        </repository>
    </distributionManagement>
   
@@ -27,6 +27,16 @@
      <plugin>
   <artifactId>maven-war-plugin</artifactId>
   <version>3.0.0</version>
+</plugin>
+      <plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+    <configuration>
+        <url>http://localhost:8081/manager/</url>
+        <server>TomcatServer</server>
+        <path>/myapp</path>
+    </configuration>
 </plugin>
     </plugins>
   </build>
