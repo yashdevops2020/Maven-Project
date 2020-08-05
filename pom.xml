@@ -20,7 +20,7 @@
 <repository>
 <id>tomcatserver</id>
 <name>Tomcat Server</name>
-<url>http:// localhost:8080/manager/text</url>
+<url>http://localhost:8080/manager/text</url>
 </repository>
 </distributionManagement>
   
@@ -31,7 +31,7 @@
  <artifactId>tomcat8-maven-plugin</artifactId>  
  <version>2.2</version>  
  <configuration>  
-  <url>http:// localhost:8080/manager/text</url>
+  <url>http://localhost:8080/manager/text</url>
    <path>/mavenproject</path>
   <server>tomcatserver</server>    
   <username>admin</username>  
